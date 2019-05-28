@@ -8,6 +8,7 @@
     <tr>
       <th scope="col">NAME</th>
       <th scope="col">AGE</th>
+      <th scope="col">EMAIL</th>
     </tr>
   </thead>
 
@@ -20,6 +21,7 @@
       <tr>
         <td><%= student.name %></td>
         <td><%= student.age %></td>
+        <td><%= student.email %></td>
         <td><%= link_to 'Show', student, class:"btn btn-danger" %></td>
         <td><%= link_to 'Edit', edit_student_path(student), class:'btn btn-success' %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-primary' %></td>
